@@ -151,7 +151,7 @@ st.pyplot(fig) # streamlit 대시보드에 표현
 st.header('image 실습')
 
 from PIL import Image
-img = Image.open('./PythonProject/repo2/1.png')
+img = Image.open(''./img/1.png'')
 st.image(img,width = 300, caption='Image from Naver')
 
 # sidebar
@@ -169,7 +169,7 @@ with st.sidebar:
 st.header('tab 실습')
 tab1, tab2 = st.tabs(['Table','Graph'])
 
-df = pd.read_csv('./PythonProject/repo2/midwest.csv')
+df = pd.read_csv(''./img/1.png'')
 
 with tab1:
     st.table(df.head(3))
@@ -181,7 +181,7 @@ with tab2:
 
 # expander
 st.header('expander 실습')
-df = pd.read_csv('./PythonProject/repo2/midwest.csv')
+df = pd.read_csv(''./img/1.png'')
 
 fig, ax = plt.subplots()
 sns.scatterplot(data = df, ax=ax)
